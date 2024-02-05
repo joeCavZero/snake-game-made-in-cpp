@@ -11,8 +11,8 @@ void SwitchFullscreen() {
         SetWindowPosition( SCREEN_WIDTH/4 , SCREEN_HEIGHT/4);
         return;
     }else {
-        auto monitor = GetCurrentMonitor();
-        SetWindowSize( GetMonitorWidth(monitor) , GetMonitorHeight(monitor) );
+        //auto monitor = GetCurrentMonitor();
+        //SetWindowSize( GetMonitorWidth(monitor) , GetMonitorHeight(monitor) );
         ToggleFullscreen();
         return;
 

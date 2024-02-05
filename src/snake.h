@@ -1,22 +1,25 @@
-#ifndef game_h
+#ifndef SNAKE_H
 
-#define game_h
+#define SNAKE_H
 
 #include "raylib.h"
 #include <deque> //double ended queue
 
 
 class Snake{
-    private:
-        std::deque<Vector2> body;
-        Vector2 dir;
-        bool grow;
     public:
+        std::deque<Vector2> body;
+        Vector2 next_dir;
+        
+        Vector2 aim;
         static Snake New(Vector2 pos);
         void input();
         void update();
         void draw();
-        std::deque<Vector2> getBody();
+
+        void grow();
+        void reset(Vector2 pos);
+        bool checkCollisionWithHimself();
 };
 
 #endif
