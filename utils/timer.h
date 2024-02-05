@@ -1,6 +1,6 @@
 
-#ifndef Timer_h
-#define Timer_h
+#ifndef TIMER_H
+#define TIMER_H
 
 #include "raylib.h"
 

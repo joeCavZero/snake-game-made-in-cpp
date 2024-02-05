@@ -1,5 +1,5 @@
 #include "fullscreen.h"
-#include "settings.h"
+#include "../src/settings.h"
 
 #include "raylib.h"
 
